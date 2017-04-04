@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.example.mycarcontroller"
+	android:installLocation="auto"
+	android:versionCode="1"
+	android:versionName="1.0" >
+
+	<uses-sdk
+		android:minSdkVersion="13"
+		android:targetSdkVersion="17" />
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.FLASHLIGHT" />
+	<uses-permission android:name="android.permission.CAMERA" />
+
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.autofocus" />
+
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+	<application
+		android:allowBackup="true"
+		android:icon="@drawable/caricon"
+		android:label="@string/app_name"
+		android:theme="@style/AppTheme" >
+		<activity
+			android:name=".ModeActivity"
+			android:configChanges="orientation|keyboardHidden|navigation"
+			android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:windowSoftInputMode="adjustPan" >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name="Mode1Activity"
+			android:configChanges="orientation|keyboardHidden|navigation"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:windowSoftInputMode="adjustPan" >
+		</activity>
+		<activity
+			android:name="Mode2Activity"
+			android:configChanges="orientation|keyboardHidden|navigation"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:windowSoftInputMode="adjustPan" >
+		</activity>
+		<activity
+			android:name="Mode3Activity"
+			android:configChanges="orientation|keyboardHidden|navigation"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:windowSoftInputMode="adjustPan" >
+		</activity>
+	</application>
+
+</manifest>

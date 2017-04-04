@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/wheat" >
+
+	<ImageView
+		android:id="@+id/imageview"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_gravity="center"
+		android:scaleType="fitXY" />
+
+	<RelativeLayout
+		android:id="@+id/buttons"
+		android:layout_width="150dp"
+		android:layout_height="150dp"
+		android:layout_gravity="bottom|right" >
+
+		<Button
+			android:id="@+id/UP"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:background="@drawable/up" >
+		</Button>
+
+		<Button
+			android:id="@+id/DOWN"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:background="@drawable/down" >
+		</Button>
+
+		<Button
+			android:id="@+id/LEFT"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:background="@drawable/left" >
+		</Button>
+
+		<Button
+			android:id="@+id/RIGHT"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:background="@drawable/right" >
+		</Button>
+	</RelativeLayout>
+
+	<Button
+		android:id="@+id/changecamera"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:layout_gravity="right"
+		android:layout_marginTop="50dp"
+		android:background="@drawable/switch_camera" />
+
+	<Button
+		android:id="@+id/openlight"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:layout_gravity="right"
+		android:layout_marginTop="100dp"
+		android:background="@drawable/light" />
+
+	<Button
+		android:id="@+id/sound"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:layout_gravity="left"
+		android:layout_marginTop="50dp"
+		android:background="@drawable/sound" />
+
+	<Button
+		android:id="@+id/face"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:layout_gravity="left"
+		android:layout_marginTop="100dp"
+		android:background="@drawable/face_change" />
+
+	<ScrollView
+		android:layout_width="150dp"
+		android:layout_height="35dp"
+		android:layout_gravity="left"
+		android:layout_marginTop="15dp"
+		android:background="@android:color/transparent" >
+
+		<TextView
+			android:id="@+id/info"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent" />
+	</ScrollView>
+
+	<TextView
+		android:id="@+id/myip"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="top|left"
+		android:background="@android:color/transparent"
+		android:text="本地IP: " />
+
+	<LinearLayout
+		android:id="@+id/ll"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="top|right"
+		android:orientation="horizontal" >
+
+		<EditText
+			android:id="@+id/ip"
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"
+			android:background="#10000000"
+			android:lines="1"
+			android:text="10.16.56"
+			android:textSize="20sp" />
+
+		<Button
+			android:id="@+id/connect"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/button_style"
+			android:text="连接"
+			android:textSize="20sp" />
+	</LinearLayout>
+
+	<RelativeLayout
+		android:id="@+id/buttons2"
+		android:layout_width="150dp"
+		android:layout_height="150dp"
+		android:layout_gravity="bottom|left"
+		android:background="@drawable/direction" >
+
+		<Button
+			android:id="@+id/HeadUP"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="10dp"
+			android:background="@android:color/transparent"
+			android:textSize="25sp" >
+		</Button>
+
+		<Button
+			android:id="@+id/HeadDOWN"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginBottom="10dp"
+			android:background="@android:color/transparent"
+			android:textSize="25sp" >
+		</Button>
+
+		<Button
+			android:id="@+id/HeadLEFT"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="10dp"
+			android:background="@android:color/transparent"
+			android:textSize="25sp" >
+		</Button>
+
+		<Button
+			android:id="@+id/HeadRIGHT"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="10dp"
+			android:background="@android:color/transparent"
+			android:textSize="25sp" >
+		</Button>
+	</RelativeLayout>
+
+</FrameLayout>

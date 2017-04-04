@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/wheat" >
+
+	<RelativeLayout
+		android:id="@+id/buttons"
+		android:layout_width="150dp"
+		android:layout_height="150dp"
+		android:layout_gravity="bottom|right" >
+
+		<Button
+			android:id="@+id/UP"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:background="@drawable/up" >
+		</Button>
+
+		<Button
+			android:id="@+id/DOWN"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:background="@drawable/down" >
+		</Button>
+
+		<Button
+			android:id="@+id/LEFT"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:background="@drawable/left" >
+		</Button>
+
+		<Button
+			android:id="@+id/RIGHT"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:background="@drawable/right" >
+		</Button>
+	</RelativeLayout>
+
+	<Button
+		android:id="@+id/bluetooth"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="top|right"
+		android:layout_marginRight="10dp"
+		android:layout_marginTop="10dp"
+		android:background="@drawable/button_style"
+		android:text="选择蓝牙设备"
+		android:textSize="25sp" />
+
+	<ScrollView
+		android:layout_width="150dp"
+		android:layout_height="150dp"
+		android:layout_gravity="top|left"
+		android:background="@android:color/transparent" >
+
+		<TextView
+			android:id="@+id/info"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+	</ScrollView>
+
+	<RelativeLayout
+		android:id="@+id/buttons2"
+		android:layout_width="150dp"
+		android:layout_height="150dp"
+		android:layout_gravity="bottom|left"
+		android:background="@drawable/direction" >
+
+		<Button
+			android:id="@+id/HeadUP"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="10dp"
+			android:background="@android:color/transparent" >
+		</Button>
+
+		<Button
+			android:id="@+id/HeadDOWN"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginBottom="10dp"
+			android:background="@android:color/transparent" >
+		</Button>
+
+		<Button
+			android:id="@+id/HeadLEFT"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="10dp"
+			android:background="@android:color/transparent" >
+		</Button>
+
+		<Button
+			android:id="@+id/HeadRIGHT"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="10dp"
+			android:background="@android:color/transparent" >
+		</Button>
+	</RelativeLayout>
+
+</FrameLayout>

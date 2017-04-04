@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/wheat"
+	android:gravity="center"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	tools:context="com.example.mycarcontroller.ModeActivity" >
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+
+		<Button
+			android:id="@+id/mode1"
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:background="@drawable/button_style"
+			android:text="单独控制小车" />
+
+		<Button
+			android:id="@+id/mode2"
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:layout_below="@id/mode1"
+			android:layout_marginTop="35dp"
+			android:background="@drawable/button_style"
+			android:text="控制小车上的手机" />
+
+		<Button
+			android:id="@+id/mode3"
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:layout_below="@id/mode2"
+			android:layout_marginTop="35dp"
+			android:background="@drawable/button_style"
+			android:text="放小车上控制小车" />
+	</LinearLayout>
+
+</RelativeLayout>
